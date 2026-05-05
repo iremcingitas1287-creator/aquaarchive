@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import json
 from datetime import datetime
-%%writefile app.py
 import streamlit as st
 import pandas as pd
 from supabase import create_client
