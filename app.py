@@ -537,10 +537,5 @@ with right_col:
     Kayıtlar ve fotoğraflar Supabase üzerinde kalıcıdır.
     </div>
     """, unsafe_allow_html=True)
-!wget -q -O cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
-!chmod +x cloudflared
 
-!streamlit run app.py --server.port 8501 &>/content/logs.txt &
-
-!./cloudflared tunnel --url http://localhost:8501 
 
